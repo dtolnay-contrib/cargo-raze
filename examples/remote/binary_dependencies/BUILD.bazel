@@ -9,5 +9,6 @@ rust_binary(
     data = [
         "//remote/binary_dependencies/cargo:cargo_bin_texture_synthesis",
     ],
+    edition = "2018",
     deps = all_crate_deps(),
 )

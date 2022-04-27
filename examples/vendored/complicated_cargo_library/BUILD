@@ -5,6 +5,7 @@ package(default_visibility = ["//visibility:public"])
 rust_binary(
     name = "complicated_cargo_library",
     srcs = ["src/main.rs"],
+    edition = "2018",
     deps = [
         "//vendored/complicated_cargo_library/cargo:regex",
         "//vendored/complicated_cargo_library/cargo:specs",

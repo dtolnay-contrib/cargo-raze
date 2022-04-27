@@ -4,6 +4,7 @@ load("@rules_rust//rust:defs.bzl", "rust_test")
 cargo_build_script(
     name = "build_script",
     srcs = ["build.rs"],
+    edition = "2018",
     deps = [
         "@cargo_raze_examples//remote/build_dependencies/cargo:ferris_says",
     ],

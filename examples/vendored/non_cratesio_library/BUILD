@@ -5,6 +5,7 @@ package(default_visibility = ["//visibility:public"])
 rust_binary(
     name = "non_cratesio_library",
     srcs = ["src/main.rs"],
+    edition = "2018",
     deps = [
         "//vendored/non_cratesio_library/cargo:env_logger",
         "//vendored/non_cratesio_library/cargo:futures",
